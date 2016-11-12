@@ -1,0 +1,8 @@
+# Debug/Release
+github "Alamofire/Alamofire" ~> 4.0
+github "antitypical/Result" ~> 3.0
+github "SnapKit/SnapKit" ~> 3.0.2
+
+# Test
+github "Quick/Quick"
+github "Quick/Nimble"
