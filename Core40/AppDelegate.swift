@@ -14,10 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		self.window = makeWindow(for: application)
 		return true
+	}
+
+	private func makeWindow(for application: UIApplication) -> UIWindow {
+		let frame = UIScreen.main.bounds
+		let window = UIWindow(frame: frame)
+
+		let homeVC = HomeViewController()
+		window.rootViewController = homeVC
+		window.makeKeyAndVisible()
+		return window
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {
@@ -75,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// MARK: - Core Data Saving support
 
-	func saveContext () {
+	func saveContext() {
 	    let context = persistentContainer.viewContext
 	    if context.hasChanges {
 	        do {
