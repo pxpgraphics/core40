@@ -13,7 +13,7 @@ import CocoaLumberjack.DDDispatchQueueLogFormatter
 import MachO
 
 @inline(__always)
-public func log(_ level: DDLogLevel, _ message: @autoclosure () -> String, file: StaticString = #file, function: StaticString = #function, line: UInt = #line, assert: Bool = false, fatal: Bool = false) {
+public func printLog(_ level: DDLogLevel, _ message: @autoclosure () -> String, file: StaticString = #file, function: StaticString = #function, line: UInt = #line, assert: Bool = false, fatal: Bool = false) {
 	switch level {
 	case .all, .verbose, .off:
 		DDLogVerbose(message, file: file, function: function, line: line)
