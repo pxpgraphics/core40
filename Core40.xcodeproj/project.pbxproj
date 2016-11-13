@@ -19,6 +19,7 @@
 		ADCAF3861DD7B3F00082761B /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF3851DD7B3F00082761B /* ImageAsset.swift */; };
 		ADCAF38E1DD7B66D0082761B /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF38D1DD7B66D0082761B /* CocoaLumberjackSwift.framework */; };
 		ADCAF3901DD7B9C60082761B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF38F1DD7B9C60082761B /* Logger.swift */; };
+		ADCAF3941DD7E95E0082761B /* UIColor+ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF3931DD7E95E0082761B /* UIColor+ColorName.swift */; };
 		ADF1FD8F1DD79C4800583DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1FD8E1DD79C4800583DA8 /* AppDelegate.swift */; };
 		ADF1FD971DD79C4800583DA8 /* Core40.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADF1FD951DD79C4800583DA8 /* Core40.xcdatamodeld */; };
 		ADF1FD991DD79C4800583DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF1FD981DD79C4800583DA8 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		ADCAF3851DD7B3F00082761B /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageAsset.swift; path = Classes/ImageAsset.swift; sourceTree = "<group>"; };
 		ADCAF38D1DD7B66D0082761B /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 		ADCAF38F1DD7B9C60082761B /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Classes/Logger.swift; sourceTree = "<group>"; };
+		ADCAF3931DD7E95E0082761B /* UIColor+ColorName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorName.swift"; path = "Extensions/UIColor+ColorName.swift"; sourceTree = "<group>"; };
 		ADF1FD8B1DD79C4800583DA8 /* Core40.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Core40.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF1FD8E1DD79C4800583DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF1FD961DD79C4800583DA8 /* Core40.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core40.xcdatamodel; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		ADCAF3771DD7B26D0082761B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ADCAF3931DD7E95E0082761B /* UIColor+ColorName.swift */,
 				ADCAF3781DD7B28F0082761B /* UIColor+Random.swift */,
 			);
 			name = Extensions;
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCAF3941DD7E95E0082761B /* UIColor+ColorName.swift in Sources */,
 				ADCAF3861DD7B3F00082761B /* ImageAsset.swift in Sources */,
 				ADCAF3791DD7B28F0082761B /* UIColor+Random.swift in Sources */,
 				ADCAF3901DD7B9C60082761B /* Logger.swift in Sources */,
