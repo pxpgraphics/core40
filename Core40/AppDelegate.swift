@@ -16,11 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
-		self.window = makeWindow(for: application)
+		Logger.configureLoggers()
+		window = makeWindow()
 		return true
 	}
 
-	private func makeWindow(for application: UIApplication) -> UIWindow {
+	private func makeWindow() -> UIWindow {
 		let frame = UIScreen.main.bounds
 		let window = UIWindow(frame: frame)
 

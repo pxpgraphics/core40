@@ -16,6 +16,9 @@
 		ADCAF3751DD7B1650082761B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF3741DD7B1650082761B /* SnapKit.framework */; };
 		ADCAF3791DD7B28F0082761B /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF3781DD7B28F0082761B /* UIColor+Random.swift */; };
 		ADCAF37B1DD7B2B30082761B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF37A1DD7B2B30082761B /* HomeViewController.swift */; };
+		ADCAF3861DD7B3F00082761B /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF3851DD7B3F00082761B /* ImageAsset.swift */; };
+		ADCAF38E1DD7B66D0082761B /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF38D1DD7B66D0082761B /* CocoaLumberjackSwift.framework */; };
+		ADCAF3901DD7B9C60082761B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF38F1DD7B9C60082761B /* Logger.swift */; };
 		ADF1FD8F1DD79C4800583DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1FD8E1DD79C4800583DA8 /* AppDelegate.swift */; };
 		ADF1FD971DD79C4800583DA8 /* Core40.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADF1FD951DD79C4800583DA8 /* Core40.xcdatamodeld */; };
 		ADF1FD991DD79C4800583DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF1FD981DD79C4800583DA8 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 		ADCAF3741DD7B1650082761B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		ADCAF3781DD7B28F0082761B /* UIColor+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Random.swift"; path = "Extensions/UIColor+Random.swift"; sourceTree = "<group>"; };
 		ADCAF37A1DD7B2B30082761B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Classes/HomeViewController.swift; sourceTree = "<group>"; };
+		ADCAF3851DD7B3F00082761B /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageAsset.swift; path = Classes/ImageAsset.swift; sourceTree = "<group>"; };
+		ADCAF38D1DD7B66D0082761B /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		ADCAF38F1DD7B9C60082761B /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Classes/Logger.swift; sourceTree = "<group>"; };
 		ADF1FD8B1DD79C4800583DA8 /* Core40.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Core40.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF1FD8E1DD79C4800583DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF1FD961DD79C4800583DA8 /* Core40.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core40.xcdatamodel; sourceTree = "<group>"; };
@@ -83,9 +89,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCAF3751DD7B1650082761B /* SnapKit.framework in Frameworks */,
 				ADCAF36E1DD7AB1E0082761B /* Alamofire.framework in Frameworks */,
+				ADCAF38E1DD7B66D0082761B /* CocoaLumberjackSwift.framework in Frameworks */,
 				ADCAF36F1DD7AB1E0082761B /* Result.framework in Frameworks */,
+				ADCAF3751DD7B1650082761B /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				ADCAF36C1DD7AB1E0082761B /* Alamofire.framework */,
+				ADCAF38D1DD7B66D0082761B /* CocoaLumberjackSwift.framework */,
 				ADCAF3641DD7AA880082761B /* Nimble.framework */,
 				ADCAF3651DD7AA880082761B /* Quick.framework */,
 				ADCAF36D1DD7AB1E0082761B /* Result.framework */,
@@ -145,6 +153,15 @@
 				ADCAF3781DD7B28F0082761B /* UIColor+Random.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		ADCAF37C1DD7B3450082761B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAF3851DD7B3F00082761B /* ImageAsset.swift */,
+				ADCAF38F1DD7B9C60082761B /* Logger.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		ADF1FD821DD79C4800583DA8 = {
@@ -174,6 +191,7 @@
 				ADF1FD8E1DD79C4800583DA8 /* AppDelegate.swift */,
 				ADCAF3761DD7B25B0082761B /* Home */,
 				ADCAF3771DD7B26D0082761B /* Extensions */,
+				ADCAF37C1DD7B3450082761B /* Helpers */,
 				ADCAF3591DD7A1C30082761B /* Resources */,
 			);
 			path = Core40;
@@ -337,6 +355,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
@@ -352,7 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCAF3861DD7B3F00082761B /* ImageAsset.swift in Sources */,
 				ADCAF3791DD7B28F0082761B /* UIColor+Random.swift in Sources */,
+				ADCAF3901DD7B9C60082761B /* Logger.swift in Sources */,
 				ADF1FD971DD79C4800583DA8 /* Core40.xcdatamodeld in Sources */,
 				ADF1FD8F1DD79C4800583DA8 /* AppDelegate.swift in Sources */,
 				ADCAF37B1DD7B2B30082761B /* HomeViewController.swift in Sources */,

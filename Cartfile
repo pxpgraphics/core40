@@ -1,6 +1,7 @@
 # Debug/Release
 github "Alamofire/Alamofire" ~> 4.0
 github "antitypical/Result" ~> 3.0
+github "CocoaLumberjack/CocoaLumberjack"
 github "SnapKit/SnapKit" ~> 3.0.2
 
 # Test
