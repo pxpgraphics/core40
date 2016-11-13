@@ -21,6 +21,13 @@ class HomeViewController: UIViewController {
 		return UnderlinedSegmentedControl(items: items.map { $0.rawValue })
 	}()
 
+	lazy var imageView: UIImageView = {
+		let color = UIColor(named: .black, alpha: 0.5)
+		let image = UIImage(named: .backgroundHome).multiply(by: color)
+		let imageView = UIImageView(image: image, contentMode: .scaleAspectFill)
+		return imageView
+	}()
+
 	override init(nibName: String?, bundle: Bundle?) {
 		super.init(nibName: nibName, bundle: bundle)
 		title = NSLocalizedString("Home", comment: "Home screen")
@@ -39,15 +46,15 @@ class HomeViewController: UIViewController {
 
 	private func configureViews() {
 		view.backgroundColor = UIColor(named: .black)
+
+		view.addSubview(imageView)
+		imageView.snp.makeConstraints { $0.edges.equalToSuperview() }
 	}
 
 	private func configureNavigationBar() {
 		navigationItem.titleView = UIView()
-
-		// navigationController?.setNavigationBarHidden(true, animated: false)
 		navigationController?.navigationBar.addSubview(segmentedControl)
 
-		// view.addSubview(segmentedControl)
 		segmentedControl.snp.makeConstraints { make in
 			make.top.width.equalToSuperview()
 			make.height.equalTo(44)

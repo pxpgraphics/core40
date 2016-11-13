@@ -16,12 +16,15 @@ extension UIColor {
 		case black = 0x110e0eff
 	}
 
-	convenience init(named name: ColorName) {
+	convenience init(named name: ColorName, alpha: CGFloat) {
 		let rgbaValue = name.rawValue
 		let red   = CGFloat((rgbaValue >> 24) & 0xff) / 255.0
 		let green = CGFloat((rgbaValue >> 16) & 0xff) / 255.0
 		let blue  = CGFloat((rgbaValue >>  8) & 0xff) / 255.0
-		let alpha = CGFloat((rgbaValue      ) & 0xff) / 255.0
 		self.init(red: red, green: green, blue: blue, alpha: alpha)
+	}
+
+	convenience init(named name: ColorName) {
+		self.init(named: name, alpha: 1)
 	}
 }

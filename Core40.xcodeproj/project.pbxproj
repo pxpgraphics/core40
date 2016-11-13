@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD70EA821DD91B3700EBD81C /* fitness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD70EA811DD91B3700EBD81C /* fitness.jpg */; };
+		AD70EA841DD91B7600EBD81C /* UIImage+Multiply.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70EA831DD91B7600EBD81C /* UIImage+Multiply.swift */; };
+		AD70EA861DD9215200EBD81C /* UIImage+ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70EA851DD9215200EBD81C /* UIImage+ImageName.swift */; };
+		AD70EA881DD9228700EBD81C /* UIImageView+ContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70EA871DD9228700EBD81C /* UIImageView+ContentMode.swift */; };
 		ADCAF3661DD7AA880082761B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF3641DD7AA880082761B /* Nimble.framework */; };
 		ADCAF3671DD7AA880082761B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF3651DD7AA880082761B /* Quick.framework */; };
 		ADCAF36A1DD7AAE00082761B /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF3641DD7AA880082761B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -16,7 +20,6 @@
 		ADCAF3751DD7B1650082761B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF3741DD7B1650082761B /* SnapKit.framework */; };
 		ADCAF3791DD7B28F0082761B /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF3781DD7B28F0082761B /* UIColor+Random.swift */; };
 		ADCAF37B1DD7B2B30082761B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF37A1DD7B2B30082761B /* HomeViewController.swift */; };
-		ADCAF3861DD7B3F00082761B /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF3851DD7B3F00082761B /* ImageAsset.swift */; };
 		ADCAF38E1DD7B66D0082761B /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCAF38D1DD7B66D0082761B /* CocoaLumberjackSwift.framework */; };
 		ADCAF3901DD7B9C60082761B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF38F1DD7B9C60082761B /* Logger.swift */; };
 		ADCAF3941DD7E95E0082761B /* UIColor+ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAF3931DD7E95E0082761B /* UIColor+ColorName.swift */; };
@@ -65,6 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD70EA811DD91B3700EBD81C /* fitness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fitness.jpg; path = Resources/Images/fitness.jpg; sourceTree = "<group>"; };
+		AD70EA831DD91B7600EBD81C /* UIImage+Multiply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Multiply.swift"; path = "Extensions/UIImage+Multiply.swift"; sourceTree = "<group>"; };
+		AD70EA851DD9215200EBD81C /* UIImage+ImageName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageName.swift"; path = "Extensions/UIImage+ImageName.swift"; sourceTree = "<group>"; };
+		AD70EA871DD9228700EBD81C /* UIImageView+ContentMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+ContentMode.swift"; path = "Extensions/UIImageView+ContentMode.swift"; sourceTree = "<group>"; };
 		ADCAF3641DD7AA880082761B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		ADCAF3651DD7AA880082761B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		ADCAF36C1DD7AB1E0082761B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -72,7 +79,6 @@
 		ADCAF3741DD7B1650082761B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		ADCAF3781DD7B28F0082761B /* UIColor+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Random.swift"; path = "Extensions/UIColor+Random.swift"; sourceTree = "<group>"; };
 		ADCAF37A1DD7B2B30082761B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Classes/HomeViewController.swift; sourceTree = "<group>"; };
-		ADCAF3851DD7B3F00082761B /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageAsset.swift; path = Classes/ImageAsset.swift; sourceTree = "<group>"; };
 		ADCAF38D1DD7B66D0082761B /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 		ADCAF38F1DD7B9C60082761B /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Classes/Logger.swift; sourceTree = "<group>"; };
 		ADCAF3931DD7E95E0082761B /* UIColor+ColorName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorName.swift"; path = "Extensions/UIColor+ColorName.swift"; sourceTree = "<group>"; };
@@ -125,9 +131,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD70EA891DD9244300EBD81C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AD70EA811DD91B3700EBD81C /* fitness.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		ADCAF3591DD7A1C30082761B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD70EA891DD9244300EBD81C /* Images */,
 				ADF1FD981DD79C4800583DA8 /* Assets.xcassets */,
 				ADF1FD9A1DD79C4800583DA8 /* LaunchScreen.storyboard */,
 				ADF1FD9D1DD79C4800583DA8 /* Info.plist */,
@@ -162,6 +177,9 @@
 			children = (
 				ADCAF3931DD7E95E0082761B /* UIColor+ColorName.swift */,
 				ADCAF3781DD7B28F0082761B /* UIColor+Random.swift */,
+				AD70EA831DD91B7600EBD81C /* UIImage+Multiply.swift */,
+				AD70EA851DD9215200EBD81C /* UIImage+ImageName.swift */,
+				AD70EA871DD9228700EBD81C /* UIImageView+ContentMode.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -170,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				ADCAF3951DD7EAA40082761B /* FontFamily.swift */,
-				ADCAF3851DD7B3F00082761B /* ImageAsset.swift */,
 				ADCAF38F1DD7B9C60082761B /* Logger.swift */,
 			);
 			name = Helpers;
@@ -356,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF1FD9C1DD79C4800583DA8 /* LaunchScreen.storyboard in Resources */,
+				AD70EA821DD91B3700EBD81C /* fitness.jpg in Resources */,
 				ADF1FD991DD79C4800583DA8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,15 +420,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD70EA861DD9215200EBD81C /* UIImage+ImageName.swift in Sources */,
 				ADCAF3981DD8368F0082761B /* PrincipalTabBarController.swift in Sources */,
+				AD70EA841DD91B7600EBD81C /* UIImage+Multiply.swift in Sources */,
 				ADCAF3941DD7E95E0082761B /* UIColor+ColorName.swift in Sources */,
-				ADCAF3861DD7B3F00082761B /* ImageAsset.swift in Sources */,
 				ADCAF39D1DD850150082761B /* PrincipalTabBarWireframe.swift in Sources */,
 				ADCAF3791DD7B28F0082761B /* UIColor+Random.swift in Sources */,
 				ADCAF3901DD7B9C60082761B /* Logger.swift in Sources */,
 				ADCAF3961DD7EAA40082761B /* FontFamily.swift in Sources */,
 				ADCAF3A11DD85B480082761B /* UnderlinedSegmentedControl.swift in Sources */,
 				ADF1FD971DD79C4800583DA8 /* Core40.xcdatamodeld in Sources */,
+				AD70EA881DD9228700EBD81C /* UIImageView+ContentMode.swift in Sources */,
 				ADF1FD8F1DD79C4800583DA8 /* AppDelegate.swift in Sources */,
 				ADCAF37B1DD7B2B30082761B /* HomeViewController.swift in Sources */,
 			);
