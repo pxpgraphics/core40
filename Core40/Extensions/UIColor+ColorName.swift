@@ -11,7 +11,9 @@ import UIKit
 extension UIColor {
 
 	enum ColorName: UInt32 {
-		case black = 0x111111ff
+		case orange = 0xf9A129ff
+		case gray = 0x5a5b5eff
+		case black = 0x110e0eff
 	}
 
 	convenience init(named name: ColorName) {

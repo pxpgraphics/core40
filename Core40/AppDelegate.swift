@@ -14,6 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
+	static var shared: AppDelegate {
+		return UIApplication.shared.delegate as! AppDelegate
+	}
+
+	fileprivate lazy var principalTabBarController: PrincipalTabBarController = {
+		let tabBarController = PrincipalTabBarController()
+		tabBarController.principalDelegate = self
+		return tabBarController
+	}()
+
+	fileprivate lazy var principalNavigationController: UINavigationController = {
+		return UINavigationController(rootViewController: self.principalTabBarController)
+	}()
+
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
 		Logger.configureLoggers()
@@ -25,8 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let frame = UIScreen.main.bounds
 		let window = UIWindow(frame: frame)
 
-		let homeVC = HomeViewController()
-		window.rootViewController = homeVC
+		window.rootViewController = principalNavigationController
 		window.makeKeyAndVisible()
 		return window
 	}
@@ -52,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationWillTerminate(_ application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 		// Saves changes in the application's managed object context before the application terminates.
-		self.saveContext()
+		saveContext()
 	}
 
 	// MARK: - Core Data stack
@@ -78,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	             * The store could not be migrated to the current model version.
 	             Check the error message to determine what the actual problem was.
 	             */
-	            fatalError("Unresolved error \(error), \(error.userInfo)")
+				printLog(.error, "Unresolved error \(error), \(error.userInfo)", assert: true)
 	        }
 	    })
 	    return container
@@ -95,10 +108,74 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	            // Replace this implementation with code to handle the error appropriately.
 	            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
 	            let nserror = error as NSError
-	            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+				printLog(.error, "Unresolved error \(nserror), \(nserror.userInfo)", assert: true)
 	        }
 	    }
 	}
-
 }
 
+// MARK: - PrincipalTabBarControllerDelegate
+
+extension AppDelegate: PrincipalTabBarControllerDelegate {
+
+	unowned var selectedNavigationController: UINavigationController {
+		guard let selectedNavController = self.principalTabBarController.selectedViewController?.navigationController else {
+			printLog(.error, "Expected a selected navigation controller for \(self.principalTabBarController)", assert: true)
+			return principalNavigationController
+		}
+		return selectedNavController
+	}
+
+	unowned var selectedViewController: UIViewController {
+		guard let selectedVC = self.principalTabBarController.selectedViewController else {
+			printLog(.error, "Expected a selected view controller for \(self.principalTabBarController)", assert: true)
+			return principalTabBarController
+		}
+		return selectedVC
+	}
+
+	unowned var topNavigationController: UIViewController {
+		return AppDelegate.topNavigationController(base: self.selectedNavigationController)
+	}
+
+	unowned var topViewController: UIViewController {
+		return AppDelegate.topViewController(base: self.selectedViewController)
+	}
+
+	unowned var principleWireframe: PrincipalTabBarWireframe {
+		return principalTabBarController.wireframe
+	}
+
+	private static func topNavigationController(base: UINavigationController = AppDelegate.shared.selectedNavigationController) -> UINavigationController {
+		if let visibleNavController = base.visibleViewController?.navigationController {
+			return topNavigationController(base: visibleNavController)
+		}
+
+		if let tabBarController = base.topViewController as? UITabBarController,
+			let selectedNavController = tabBarController.selectedViewController?.navigationController {
+			return topNavigationController(base: selectedNavController)
+		}
+
+		if let presentedNavController = base.presentedViewController?.navigationController {
+			return topNavigationController(base: presentedNavController)
+		}
+		return base
+	}
+
+	private static func topViewController(base: UIViewController = AppDelegate.shared.selectedViewController) -> UIViewController {
+		if let navController = base as? UINavigationController,
+			let visibleVC = navController.visibleViewController {
+			return topViewController(base: visibleVC)
+		}
+
+		if let tabBarController = base as? UITabBarController,
+			let selectedVC = tabBarController.selectedViewController {
+			return topViewController(base: selectedVC)
+		}
+
+		if let presentedVC = base.presentedViewController {
+			return topViewController(base: presentedVC)
+		}
+		return base
+	}
+}
