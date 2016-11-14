@@ -21,20 +21,26 @@ The following estimate is based on our initial discussion about the minimal proo
 
 ### Design:
 **Do you need a cutting edge user interface?**
+
+*Main Features:*
+
   - multiple paged/tabbed app
   - user dashboard/profile page (Read)
   - trainer platform toggling {Spin, Lagree}
   - account info {Spin, Lagree} (Read/Update/Delete)
-  - routine/exercise management {Spin, Lagree?} (Create/Read/Update/Delete)
-  - routine/exercise organization / ordering {Spin, Lagree?} (Update)
-  - routine/exercise notes {Spin, Lagree?} (Create/Read/Update/Delete)
-  - routine/exercise email sharing {Spin, Lagree?}
-  - routine/exercise URL deep linking {Spin, Lagree?}
   - playlist management {Lagree, Spin?} (Create/Read/Update/Delete)
   - music playback timer {Lagree, Spin?} (Read)
   - music playback activity feed {Lagree, Spin?} (Create/Read/Update/Delete)
   - playlist email sharing {Lagree, Spin?}
   - playlist URL deep linking {Lagree, Spin?}
+  
+*Nice To Have Features:*
+
+  - routine/exercise management {Spin, Lagree?} (Create/Read/Update/Delete)
+  - routine/exercise organization / ordering {Spin, Lagree?} (Update)
+  - routine/exercise notes {Spin, Lagree?} (Create/Read/Update/Delete)
+  - routine/exercise email sharing {Spin, Lagree?}
+  - routine/exercise URL deep linking {Spin, Lagree?}
 
 **Do you need wireframes for user experience flows?**
   - Basic development wireframe provided at no cost
@@ -83,6 +89,9 @@ The following estimate is based on our initial discussion about the minimal proo
   - Unknown
 
 ** What is the app trying to achieve?**
+  - Unknown
+  
+** How are you currently achieving this goal(s) without the app?**
   - Unknown
 
 ### Database:
