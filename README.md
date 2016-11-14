@@ -79,19 +79,19 @@ The following estimate is based on our initial discussion about the minimal proo
   
 ### Product Requirements:
 
-** How will trainers use their notes?**
+**How will trainers use their notes?**
   - Unknown
   
-** How will trainers use their playslits?**
+**How will trainers use their playslits?**
   - Unknown
 
-** How will trainers use their routines?**
+**How will trainers use their routines?**
   - Unknown
 
-** What is the app trying to achieve?**
+**What is the app trying to achieve?**
   - Unknown
   
-** How are you currently achieving this goal(s) without the app?**
+**How are you currently achieving this goal(s) without the app?**
   - Unknown
 
 ### Database:
