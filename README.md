@@ -70,6 +70,20 @@ The following estimate is based on our initial discussion about the minimal proo
 
 **Do you need a backend service to handle app interaction(s)?**
   - Unknown, but most likely.
+  
+### Product Requirements:
+
+** How will trainers use their notes?**
+  - Unknown
+  
+** How will trainers use their playslits?**
+  - Unknown
+
+** How will trainers use their routines?**
+  - Unknown
+
+** What is the app trying to achieve?**
+  - Unknown
 
 ### Database:
 **Do you need a database to configure and store your app's content?**
