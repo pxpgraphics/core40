@@ -93,6 +93,12 @@ The following estimate is based on our initial discussion about the minimal proo
   
 **How are you currently achieving this goal(s) without the app?**
   - Unknown
+  
+**Would this be a consumer app or an enterprise app?**
+  - Unknown
+  
+**Does the app need to be uploaded to the App Store?**
+  - Unknown
 
 ## Database:
 **Do you need a database to configure and store your app's content?**
