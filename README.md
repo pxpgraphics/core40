@@ -47,7 +47,7 @@ The following estimate is based on our initial discussion about the minimal proo
 
 ## Backend:
 
-### Authentication:
+# Authentication:
 **Do people need to log in?**
   - Facebook (OAuth2)
   - Spotify (needs Facebook)
@@ -61,7 +61,7 @@ The following estimate is based on our initial discussion about the minimal proo
   - routines (exercises)
   - activities (notes)
 
-### Functionality:
+## Functionality:
 **Does the app have any dependencies?**
   - [Spotify iOS SDK](https://developer.spotify.com/technologies/spotify-ios-sdk/), for audio streaming
   - [Spotify Web API](https://developer.spotify.com/web-api/), for modifying playlists
@@ -70,14 +70,14 @@ The following estimate is based on our initial discussion about the minimal proo
   - Send playlist(s) via email that would prompt the recipient to open in the app
   - Send routines/exercises(s) via email that would prompt the recipient to open in the app
 
-### Hosting:
+## Hosting:
 **Do you need a new hosting service for your app?**
   - Unknown
 
 **Do you need a backend service to handle app interaction(s)?**
   - Unknown, but most likely.
   
-### Product Requirements:
+## Product Requirements:
 
 **How will trainers use their notes?**
   - Unknown
@@ -94,7 +94,7 @@ The following estimate is based on our initial discussion about the minimal proo
 **How are you currently achieving this goal(s) without the app?**
   - Unknown
 
-### Database:
+## Database:
 **Do you need a database to configure and store your app's content?**
 
   - User:
