@@ -21,27 +21,33 @@ The following estimate is based on our initial discussion about the minimal proo
 
 ### Design:
 **Do you need a cutting edge user interface?**
+
+*Main Features:*
+
   - multiple paged/tabbed app
   - user dashboard/profile page (Read)
   - trainer platform toggling {Spin, Lagree}
   - account info {Spin, Lagree} (Read/Update/Delete)
-  - routine/exercise management {Spin, Lagree?} (Create/Read/Update/Delete)
-  - routine/exercise organization / ordering {Spin, Lagree?} (Update)
-  - routine/exercise notes {Spin, Lagree?} (Create/Read/Update/Delete)
-  - routine/exercise email sharing {Spin, Lagree?}
-  - routine/exercise URL deep linking {Spin, Lagree?}
   - playlist management {Lagree, Spin?} (Create/Read/Update/Delete)
   - music playback timer {Lagree, Spin?} (Read)
   - music playback activity feed {Lagree, Spin?} (Create/Read/Update/Delete)
   - playlist email sharing {Lagree, Spin?}
   - playlist URL deep linking {Lagree, Spin?}
+  
+*Nice To Have Features:*
+
+  - routine/exercise management {Spin, Lagree?} (Create/Read/Update/Delete)
+  - routine/exercise organization / ordering {Spin, Lagree?} (Update)
+  - routine/exercise notes {Spin, Lagree?} (Create/Read/Update/Delete)
+  - routine/exercise email sharing {Spin, Lagree?}
+  - routine/exercise URL deep linking {Spin, Lagree?}
 
 **Do you need wireframes for user experience flows?**
   - Basic development wireframe provided at no cost
 
 ## Backend:
 
-### Authentication:
+# Authentication:
 **Do people need to log in?**
   - Facebook (OAuth2)
   - Spotify (needs Facebook)
@@ -55,7 +61,7 @@ The following estimate is based on our initial discussion about the minimal proo
   - routines (exercises)
   - activities (notes)
 
-### Functionality:
+## Functionality:
 **Does the app have any dependencies?**
   - [Spotify iOS SDK](https://developer.spotify.com/technologies/spotify-ios-sdk/), for audio streaming
   - [Spotify Web API](https://developer.spotify.com/web-api/), for modifying playlists
@@ -64,14 +70,37 @@ The following estimate is based on our initial discussion about the minimal proo
   - Send playlist(s) via email that would prompt the recipient to open in the app
   - Send routines/exercises(s) via email that would prompt the recipient to open in the app
 
-### Hosting:
+## Hosting:
 **Do you need a new hosting service for your app?**
   - Unknown
 
 **Do you need a backend service to handle app interaction(s)?**
   - Unknown, but most likely.
+  
+## Product Requirements:
 
-### Database:
+**How will trainers use their notes?**
+  - Unknown
+  
+**How will trainers use their playslits?**
+  - Unknown
+
+**How will trainers use their routines?**
+  - Unknown
+
+**What is the app trying to achieve?**
+  - Unknown
+  
+**How are you currently achieving this goal(s) without the app?**
+  - Unknown
+  
+**Would this be a consumer app or an enterprise app?**
+  - Unknown
+  
+**Does the app need to be uploaded to the App Store?**
+  - Unknown
+
+## Database:
 **Do you need a database to configure and store your app's content?**
 
   - User:
