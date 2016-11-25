@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0BEE661DE9017B00DB2C92 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEE651DE9017B00DB2C92 /* Router.swift */; };
 		AD70EA821DD91B3700EBD81C /* fitness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD70EA811DD91B3700EBD81C /* fitness.jpg */; };
 		AD70EA841DD91B7600EBD81C /* UIImage+Multiply.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70EA831DD91B7600EBD81C /* UIImage+Multiply.swift */; };
 		AD70EA861DD9215200EBD81C /* UIImage+ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70EA851DD9215200EBD81C /* UIImage+ImageName.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD0BEE651DE9017B00DB2C92 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Classes/Router.swift; sourceTree = "<group>"; };
 		AD70EA811DD91B3700EBD81C /* fitness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fitness.jpg; path = Resources/Images/fitness.jpg; sourceTree = "<group>"; };
 		AD70EA831DD91B7600EBD81C /* UIImage+Multiply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Multiply.swift"; path = "Extensions/UIImage+Multiply.swift"; sourceTree = "<group>"; };
 		AD70EA851DD9215200EBD81C /* UIImage+ImageName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageName.swift"; path = "Extensions/UIImage+ImageName.swift"; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0BEE641DE9016600DB2C92 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AD0BEE651DE9017B00DB2C92 /* Router.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
 		AD70EA891DD9244300EBD81C /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +247,7 @@
 				ADF1FD8E1DD79C4800583DA8 /* AppDelegate.swift */,
 				ADCAF39E1DD8501C0082761B /* Principal Tab Bar */,
 				ADCAF3761DD7B25B0082761B /* Home */,
+				AD0BEE641DE9016600DB2C92 /* Router */,
 				ADCAF3771DD7B26D0082761B /* Extensions */,
 				ADCAF37C1DD7B3450082761B /* Helpers */,
 				ADCAF39F1DD85B330082761B /* Views */,
@@ -430,6 +441,7 @@
 				ADCAF3961DD7EAA40082761B /* FontFamily.swift in Sources */,
 				ADCAF3A11DD85B480082761B /* UnderlinedSegmentedControl.swift in Sources */,
 				ADF1FD971DD79C4800583DA8 /* Core40.xcdatamodeld in Sources */,
+				AD0BEE661DE9017B00DB2C92 /* Router.swift in Sources */,
 				AD70EA881DD9228700EBD81C /* UIImageView+ContentMode.swift in Sources */,
 				ADF1FD8F1DD79C4800583DA8 /* AppDelegate.swift in Sources */,
 				ADCAF37B1DD7B2B30082761B /* HomeViewController.swift in Sources */,
